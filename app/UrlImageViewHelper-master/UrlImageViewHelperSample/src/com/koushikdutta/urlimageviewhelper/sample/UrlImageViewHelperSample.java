@@ -14,9 +14,10 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.animation.OvershootInterpolator;
 import android.view.animation.ScaleAnimation;
-import android.widget.*;
+
 import com.koushikdutta.urlimageviewhelper.UrlImageViewCallback;
 import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;

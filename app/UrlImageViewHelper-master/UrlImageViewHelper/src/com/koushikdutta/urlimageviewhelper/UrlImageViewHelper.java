@@ -17,9 +17,9 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.WindowManager;
 import android.widget.ImageView;
+
 import org.apache.http.NameValuePair;
 
-import java.io.*;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Hashtable;

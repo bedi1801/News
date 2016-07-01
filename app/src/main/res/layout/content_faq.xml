@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dashmesh.news.FaqActivity"
+    tools:showIn="@layout/app_bar_faq">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/faq1"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:text="1. What does the Application do ? "/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/faq2"
+        android:layout_below="@+id/faq1"
+        android:text="-This is a 'Simple News Reader' application for daily news."/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_below="@+id/faq2"
+        android:id="@+id/faq3"
+        android:text="-News on various topics can be found here, read and can be shared with others ."/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/faq4"
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_below="@+id/faq3"
+    android:text="2.I want to read news of a specific topic.How can I do that?"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_below="@+id/faq4"
+    android:id="@+id/faq5"
+    android:text="-Slide the navigation drawer in from the left and choose categories."/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_below="@+id/faq5"
+    android:id="@+id/faq6"
+    android:text="-Various categories like Sports, Technology, Entertainment can be found there."/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_below="@+id/faq6"
+    android:id="@+id/faq7"
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="3.What if I want to read the whole article?"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/faq8"
+        android:layout_below="@+id/faq7"
+    android:text="-Just click any news article and it will open in a web view link within the app."/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/faq9"
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/faq8"
+        android:textColor="@color/colorPrimary"
+    android:text="4.What if I want to share the news with someone?"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/faq10"
+        android:layout_below="@+id/faq9"
+    android:text="-You can shhare any news by just long pressing the news article and a share option will appear."/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/faq11"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/faq10"
+    android:text="5.How to refresh a news item if connection gets lost?"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/faq12"
+        android:layout_below="@+id/faq11"
+    android:text="- Just pull from top of the screen to refresh and it will reload. "/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/faq13"
+        android:textSize="18sp"
+        android:paddingTop="10dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/faq12"
+        android:textColor="@color/colorPrimary"
+    android:text="6. I wish to ask a question or give a feedback?"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/faq14"
+        android:layout_below="@+id/faq13"
+    android:text="- Slide to the navigation drawer and chhose Feedback option.Here you can ask a question,give an idea or report a bug."/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/faq15"
+        android:layout_below="@+id/faq14"
+    android:text="-Whenever we reply to ypur feedback you will get the message next time the app is opened.(reply can be seen only once)"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/faq16"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/faq15"
+        android:textColor="@color/colorPrimary"
+    android:text="7. I wish to rate the app . How can I do that?"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/faq17"
+        android:layout_below="@+id/faq16"
+    android:text="- From the navigation bar choose the 'Rate Us' option."/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_below="@+id/faq17"
+    android:id="@+id/faq18"
+        android:textSize="18sp"
+        android:paddingTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+    android:text="8. How can I share this application with someone?"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/faq19"
+        android:layout_below="@+id/faq18"
+    android:text="- Choose share option from the navigation drawer."/>
+</RelativeLayout>
+</ScrollView>
+</FrameLayout>

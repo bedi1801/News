@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.dashmesh.news.HorizontalLists">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/frame1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sports News "
+        android:layout_marginLeft="10dp"
+        android:id="@+id/sportsnews"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/horizontal_recycler_view"
+        android:background="#fff"
+        android:layout_below="@+id/sportsnews"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="5dp"/>
+    </RelativeLayout>
+</FrameLayout>
+    </android.support.v7.widget.CardView>
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Technology News "
+        android:id="@+id/technews"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/horizontal_recycler_view2"
+        android:background="#fff"
+        android:layout_below="@+id/technews"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_height="100dp"/>
+        </RelativeLayout>
+</FrameLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame3">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entertainment News "
+        android:id="@+id/enternews"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/horizontal_recycler_view3"
+        android:background="#fff"
+        android:layout_below="@+id/enternews"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="100dp"/>
+    </RelativeLayout>
+    </FrameLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

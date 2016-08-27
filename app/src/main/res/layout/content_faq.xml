@@ -9,21 +9,63 @@
     android:paddingRight="4dp"
     android:paddingTop="4dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.dashmesh.news.FaqActivity"
+    tools:context="com.dsb.apps.readit.FaqActivity"
     tools:showIn="@layout/app_bar_faq">
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disclaimer:"
+                    android:textSize="18sp"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dis"
+                    android:text="All feeds  and/or their contents that a site is displaying contains material which is derived in whole or in part from material supplied by various sources, and is protected by international copyright and trademark laws. The Site processes all information automatically using automated software without any human intervention or screening.Therefore the Site is not responsible for any (part) of this content. The copyright of the feeds' content belongs to it's author or publisher. The Site may modify,spend or discontinue any aspect of the RSS Feed at any time, including, without limitation, the availability of any Site content."/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <RelativeLayout
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
         android:paddingBottom="10dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FAQ's"
+            android:id="@+id/f"
+            android:textSize="18sp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/faq1"
+        android:layout_below="@+id/f"
         android:textSize="18sp"
         android:textColor="@color/colorPrimary"
         android:textStyle="bold"
@@ -55,7 +97,7 @@
     android:layout_height="wrap_content"
         android:layout_below="@+id/faq4"
     android:id="@+id/faq5"
-    android:text="-Slide the navigation drawer in from the left and choose categories."/>
+    android:text="-Slide the navigation drawer in from the left and choose category."/>
     <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -77,7 +119,7 @@
     android:layout_height="wrap_content"
     android:id="@+id/faq8"
         android:layout_below="@+id/faq7"
-    android:text="-Just click any news article and it will open in a web view link within the app."/>
+    android:text="-Just click any news article and it will open in a web view  within the app."/>
     <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -93,7 +135,7 @@
     android:layout_height="wrap_content"
     android:id="@+id/faq10"
         android:layout_below="@+id/faq9"
-    android:text="-You can shhare any news by just long pressing the news article and a share option will appear."/>
+    android:text="-You can share any news by just long pressing the news article and a share dialog will appear."/>
     <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -125,13 +167,13 @@
     android:layout_height="wrap_content"
     android:id="@+id/faq14"
         android:layout_below="@+id/faq13"
-    android:text="- Slide to the navigation drawer and chhose Feedback option.Here you can ask a question,give an idea or report a bug."/>
+    android:text="- Slide to the navigation drawer and choose Feedback option. Here you can ask a question,give an idea or report a bug."/>
     <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/faq15"
         android:layout_below="@+id/faq14"
-    android:text="-Whenever we reply to ypur feedback you will get the message next time the app is opened.(reply can be seen only once)"/>
+    android:text="-Please provide the correct email-id as you will get a reply via email."/>
     <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -164,6 +206,9 @@
     android:id="@+id/faq19"
         android:layout_below="@+id/faq18"
     android:text="- Choose share option from the navigation drawer."/>
-</RelativeLayout>
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
 </ScrollView>
 </FrameLayout>

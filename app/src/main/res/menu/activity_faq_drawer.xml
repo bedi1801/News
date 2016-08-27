@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Categories" >
+    <item android:title="Categories">
         <menu>
             <item
                 android:id="@+id/inter"
@@ -44,7 +44,7 @@
         <item
             android:id="@+id/about_us"
             android:icon="@drawable/about"
-            android:title="About Us" />
+            android:title="FAQ's" />
         <item
             android:id="@+id/feedback"
             android:icon="@drawable/ic_feedback_black_24dp"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.dashmesh.news">
+    package="com.dsb.apps.readit">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -17,10 +17,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MainActivity_Media"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".Web"
             android:label="Web View"
             android:parentActivityName=".SplashActivity"
@@ -31,13 +27,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".HorizontalLists"
-            android:label="News Feeds "
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".StartActivity"
-            android:label="Featured News"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -56,10 +46,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MainActivity_Nocontent"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".Grid_sports"
             android:label="Sports"
             android:screenOrientation="portrait"
@@ -75,9 +61,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MainActivity_d"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".Grid_life"
             android:label="Life"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -88,11 +71,13 @@
         <activity
             android:name=".Grid_other"
             android:label="Other"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Web2"
-            android:label="@string/title_activity_web2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".Favorite"
+            android:label="@string/title_activity_favorite"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
     </application>
 
 </manifest>

@@ -1,10 +1,10 @@
 
 package com.koushikdutta.urlimageviewhelper;
 
-import java.io.InputStream;
-
 import android.content.Context;
 import android.os.AsyncTask;
+
+import java.io.InputStream;
 
 public class AssetUrlDownloader implements UrlDownloader {
     @Override

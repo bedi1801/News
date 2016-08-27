@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dsb.apps.readit.Fav"
+    tools:showIn="@layout/activity_fav">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t1"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="Choose a Favorite Topic to get easy access to your favorite news."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t2"
+        android:paddingTop="6dp"
+        android:layout_below="@+id/t1"
+        android:text="Select Category"
+        android:textSize="12sp"
+        android:textStyle="italic"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_below="@+id/t2"
+        android:layout_height="wrap_content"
+        android:id="@+id/manufacture_spinner">
+
+    </Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t3"
+        android:paddingTop="6dp"
+        android:layout_below="@+id/manufacture_spinner"
+        android:text="Select Topic"
+        android:textSize="12sp"
+        android:textStyle="italic"/>
+    <Spinner
+        android:layout_below="@+id/t3"
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/model_spinner">
+
+    </Spinner>
+
+</RelativeLayout>
